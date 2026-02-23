@@ -1,0 +1,31 @@
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+
+    display: flex; /* para centrar el cuadro de consola en pantalla */
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    background-color: rgb(179, 221, 179); /* color del fondo */
+}
+
+#grid td { /* valores de tamaño de la grid de movimiento de las celdas individuales de la grid */
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#grid td.segment { /* estilos de la serpiente exceptuando la cabeza */
+    background-color: greenyellow; /*color serpiente*/
+    border-radius: 0.75rem; /*redondea las esquinas de la serpìente*/
+}
+#grid td.head { /* estilos de la cabeza de la serpiente */
+    background-color: green;
+}
+
+#grid td.apple {
+    background-color: red;
+    border-radius: 0.75rem;
+}
