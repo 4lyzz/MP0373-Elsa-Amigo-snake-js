@@ -1,15 +1,24 @@
+<!DOCTYPE html> <!--Tipo de doc -->
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html"; charset="utf8">
         <title>snake01</title>
-        <link rel ="stylesheet" href="style.css">
+        <link rel ="stylesheet" href="style.css"> <!--Link al style del css-->
     </head>
     <body>
-        <div class="screen"> <!--nombramos screen a class!-->
-            <div class ="game">
-                <table id="grid"></table> 
+        <div class="screen"> <!--nombramos screen a class-->
+            <div class ="game"> <!--nombramos game a la class-->
+                <table id="grid"></table>  <!-- nombramos grid a la table id-->
             </div>
         </div>
-        <script src="script.js"></script> <!--nombramos tab a la tabla!-->
+        <div class="board"> <!-- nombramos board a la class-->
+            Score: 
+            <span id="score"> 0 </span> <!-- nombramos score al span-->
+            <div id="message"> </div> <!-- nombramos message al id-->
+        </div>
+        <div class="actions">  <!-- nombramos actions a la class-->
+            <button id="start">Start Game</button> <!-- nombramos start al id de button-->
+        </div> 
+        <script src="script.js"></script> <!--link al script de js-->
     </body>
 </html>
